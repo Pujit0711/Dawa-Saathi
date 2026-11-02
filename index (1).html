@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Senior Pension Saathi</title><link rel="stylesheet" href="styles.css"></head>
+<body><header><div class="brand"><span class="logo">S+</span><div><b>Senior Pension Saathi</b><small id="tagline">Pension information, made simpler</small></div></div>
+<nav><button id="smaller" aria-label="Decrease text size">A−</button><button id="larger" aria-label="Increase text size">A+</button><button id="lang">हिन्दी</button></nav></header>
+<main><section class="hero"><div><p class="eyebrow">A SIMPLE, SENIOR-FRIENDLY DEMO</p><h1 id="headline">Check your pension status with confidence.</h1>
+<p id="intro">Enter a sample reference ID to see how a clear pension-status service could work.</p>
+<div class="notice">ⓘ <span id="notice">Student prototype only. It uses fictional sample records, not official government data.</span></div></div>
+<div class="art" aria-hidden="true"><div class="sun"></div><div class="person p1"><i></i></div><div class="person p2"><i></i></div><div class="bubble">✓ Simple and clear</div></div></section>
+<section class="grid"><article class="panel"><div class="heading"><span class="icon">⌕</span><div><h2 id="checkTitle">Pension status checker</h2><p id="checkSub">Use one of the sample IDs below.</p></div></div>
+<form id="form"><label for="ref" id="refLabel">Sample pension reference ID</label><input id="ref" placeholder="For example: DEMO-1024" autocomplete="off"><p class="help" id="help">Do not enter real Aadhaar, bank, or pension details.</p><p id="error" role="alert" hidden></p><button class="primary" id="checkBtn">Check sample status</button></form>
+<div class="samples"><b id="try">Try these sample IDs</b><div><button class="chip" data-id="DEMO-1024">DEMO-1024</button><button class="chip" data-id="DEMO-2048">DEMO-2048</button><button class="chip" data-id="DEMO-3001">DEMO-3001</button></div></div></article>
+<article class="panel result" aria-live="polite"><div class="heading"><span class="icon green">✓</span><div><h2 id="resultTitle">Your sample result</h2><p id="resultSub">Your result will appear here.</p></div></div>
+<div id="empty" class="empty"><div class="emptyIcon">•••</div><p id="emptyText">Enter a sample ID and select “Check sample status”.</p></div>
+<div id="result" hidden><div class="statusrow"><span id="badge" class="badge">Payment processed</span><span class="sampleOnly">SAMPLE ONLY</span></div><h3 id="name"></h3><p class="idline">Reference ID: <b id="rid"></b></p>
+<div class="detail"><span id="payLabel">Payment status</span><b id="status"></b></div><div class="detail"><span id="dateLabel">Last updated</span><b id="date"></b></div><p class="explain" id="explain"></p><button id="speak" class="secondary">🔊 Read result aloud</button></div></article></section>
+<section class="helpbar"><span class="question">?</span><div><b id="need">Need help?</b><p id="helpText">Ask a trusted family member or use the relevant official government service for verified information.</p></div></section>
+<section class="features"><h2 id="featuresTitle">Designed around you</h2><div class="featureGrid"><article><span class="feature blue">A+</span><h3 id="f1">Easy to read</h3><p id="f1p">Clear text and adjustable text size.</p></article><article><span class="feature green">✓</span><h3 id="f2">Simple steps</h3><p id="f2p">One task at a time, with clear labels.</p></article><article><span class="feature purple">♫</span><h3 id="f3">Voice support</h3><p id="f3p">Listen to a sample result using your browser.</p></article></div></section>
+<footer><b>Senior Pension Saathi</b> · <span id="footer">Student concept prototype</span><p>Not an official government website. All records shown are fictional.</p></footer></main>
+<script src="script.js"></script></body></html>
